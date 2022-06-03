@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CartItem } from './cart-item';
 
 @Component({
@@ -7,11 +7,7 @@ import { CartItem } from './cart-item';
   styleUrls: ['./shopping-cart-item.component.css']
 })
 export class ShoppingCartItemComponent implements OnInit {
-  cartItem : CartItem = {
-    imageUrl: 'headphones.jpg',
-    name: 'Auriculares',
-    price: 50
-  }
+  @Input() cartItem: CartItem | undefined;
   constructor() { }
 
   ngOnInit(): void {
