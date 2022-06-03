@@ -17,6 +17,11 @@ export class ShoppingCartComponent implements OnInit {
       imageUrl: 'keyboard.jpg',
       name: 'Teclado',
       price: 14.5
+    },
+    {
+      imageUrl: 'monitor.jpg',
+      name: 'Monitor',
+      price: 199.9
     }
 ]
   constructor() { }
