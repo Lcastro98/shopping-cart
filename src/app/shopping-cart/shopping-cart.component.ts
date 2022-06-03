@@ -29,4 +29,10 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteItem(itemToDelete: CartItem): void {
+    this.cartItems = this.cartItems.filter(
+      (item) => item !== itemToDelete
+    );
+  }
+
 }
